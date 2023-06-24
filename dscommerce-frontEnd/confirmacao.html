@@ -7,6 +7,7 @@
     <title>DSCommerce</title>
 
     <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/confirmation.css" />
   </head>
   <body>
     <header class="dsc-header-client">
@@ -15,15 +16,21 @@
         <div class="dsc-navbar-right">
           <div class="dsc-menu-items-container">
             <div class="dsc-menu-item">
+              <img src="images/admin.svg" alt="Admin" />
+            </div>
+            <div class="dsc-menu-item">
               <img src="images/cart.svg" alt="Carrinho de compras" />
             </div>
           </div>
-          <a href="#">Entrar</a>
+          <div class="dsc-logged-user">
+            <p>Maria Silva</p>
+            <a href="#">Sair</a>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <section id="cart-container-section" class="dsc-container">
+      <section id="confirmation-section" class="dsc-container">
         <div class="dsc-card dsc-mb20">
           <div class="dsc-cart-item-container dsc-line-bottom">
             <div class="dsc-cart-item-left">
@@ -31,9 +38,7 @@
               <div class="dsc-cart-item-description">
                 <h3>Computador Gamer XT</h3>
                 <div class="dsc-cart-item-quantity-container">
-                  <div class="dsc-cart-item-quantity-btn">-</div>
                   <p>1</p>
-                  <div class="dsc-cart-item-quantity-btn">+</div>
                 </div>
               </div>
             </div>
@@ -47,9 +52,7 @@
               <div class="dsc-cart-item-description">
                 <h3>Computador Gamer XT</h3>
                 <div class="dsc-cart-item-quantity-container">
-                  <div class="dsc-cart-item-quantity-btn">-</div>
                   <p>1</p>
-                  <div class="dsc-cart-item-quantity-btn">+</div>
                 </div>
               </div>
             </div>
@@ -61,12 +64,12 @@
             <h3>R$ 15000,00</h3>
           </div>
         </div>
+        <div class="dsc-confirmation-message dsc-mb20">
+          Pedido realizado! Número 35
+        </div>
         <div class="dsc-btn-page-container">
-            <div class="dsc-btn dsc-btn-blue">
-              Finalizar pedido
-            </div>
             <div class="dsc-btn dsc-btn-white">
-              Continuar comprando
+              Início
             </div>
         </div>
       </section>
